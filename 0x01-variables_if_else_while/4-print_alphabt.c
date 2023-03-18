@@ -8,18 +8,12 @@
  * Return: Always 0 (Success)
 */
 
-
 int main(void)
 {
-	char u = 'a';
-	char l = 'A';
+	char c = 'a';
 
-	/*prints a - z*/
-
-	for (u = 'a'; u <= 'z'; u++)
-		putchar(u);
-	for (l = 'A'; l <= 'Z'; l++)
-		putchar(l);
-	putchar('\n');
+	for (c = 'a'; c <= 'z'; c++)
+		if (c != 'q' && c != 'e')
+			putchar(c);
 	return (0);
 }
