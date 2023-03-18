@@ -11,6 +11,8 @@
 
 int main(void)
 {
+	char c = 'a';
+
 	for (char c = 'a'; c <= 'z'; c++)
 	{
 		putchar(c);
