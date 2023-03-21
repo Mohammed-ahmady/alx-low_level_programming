@@ -1,21 +1,20 @@
 #include "main.h"
 
 /**
- *add -  adds two integers and returns the result.
+ * add - adds two integers
+ * @a: the first integer
+ * @b: the second integer
  *
- * result : is the value of adding the 2 integers.
+ * This function takes two integers as arguments and returns their sum.
+ * It does not modify the input integers. The result is an integer that
+ * can be positive, negative, or zero.
  *
- *a : input integer
- *
- *b :  second input integer
- *
- * Return : The value of result
+ * Return: the sum of a and b.
  */
 
 int add(int a, int b)
 {
 	int result = a + b;
 
-	_putchar(result + '0');
 	return (result);
 }
