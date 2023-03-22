@@ -17,8 +17,9 @@ int main(void)
 	int o = 2;
 
 	printf("%d, %d", i, o);
-
-	for (int z = 2; z < n; z++)
+	
+	int z = 2;
+	for (; z < n; z++)
 	{
 		int s = i + o;
 	       printf(", %d", s);
