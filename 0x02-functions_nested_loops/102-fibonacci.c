@@ -15,17 +15,17 @@ int main(void)
 	int n = 50;
 	int i = 1;
 	int o = 2;
+	int z = 2;
 
 	printf("%d, %d", i, o);
 	
-	int z = 2;
 	while (z < n)
 	{
 		int s = i + o;
 	       printf(", %d", s);
 	       i = o;
 		o = s;
-		z++
+		z++;
 	}
 	printf("\n");
 	return (0);
