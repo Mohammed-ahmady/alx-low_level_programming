@@ -19,12 +19,13 @@ int main(void)
 	printf("%d, %d", i, o);
 	
 	int z = 2;
-	for (; z < n; z++)
+	while (z < n)
 	{
 		int s = i + o;
 	       printf(", %d", s);
 	       i = o;
 		o = s;
+		z++
 	}
 	printf("\n");
 	return (0);
