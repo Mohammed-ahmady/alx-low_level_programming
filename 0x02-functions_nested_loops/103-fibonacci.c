@@ -12,24 +12,22 @@
 
 int main(void)
 {
-	long i = 1;
-	long o = 2;
-	int z = 2;
-	long to;
+	unsigned long f1 = 0, f2 = 1, sum;
+	float total;
 
-	printf("%lu, %lu", i, o);
-
-		while (z < 400000)
+		while (true)
 		{
-			long s = i + o;
+			sum = f1 + f2;
+
+			if (sum > 4000000)
+				break;
 
 			if (s % 2 == 0)
-				to += s;
-			i = o;
-			o = s;
-			z++;
+				total += sum;
+			f1 = f2;
+			f2 = sum;
 		}
-		printf("%lu\n", to);
+		printf("%.0f\n", total);
 			return (0);
 }
 
