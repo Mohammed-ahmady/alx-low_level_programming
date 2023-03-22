@@ -13,15 +13,14 @@
 int main(void)
 {
 	int n = 50;
-	int i = 1;
-	int o = 2;
+	long i = 1;
+	long o = 2;
 	int z = 2;
 
 	printf("%d, %d", i, o);
-	
 	while (z < n)
 	{
-		int s = i + o;
+		long s = i + o;
 	       printf(", %d", s);
 	       i = o;
 		o = s;
