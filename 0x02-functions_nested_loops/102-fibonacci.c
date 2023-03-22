@@ -17,11 +17,11 @@ int main(void)
 	long o = 2;
 	int z = 2;
 
-	printf("%d, %d", i, o);
+	printf("%lu, %lu", i, o);
 	while (z < n)
 	{
 		long s = i + o;
-	       printf(", %d", s);
+	       printf(", %lu", s);
 	       i = o;
 		o = s;
 		z++;
