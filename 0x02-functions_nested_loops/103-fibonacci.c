@@ -15,7 +15,7 @@ int main(void)
 	unsigned long f1 = 0, f2 = 1, sum;
 	float total;
 
-		while (true)
+		while (1)
 		{
 			sum = f1 + f2;
 
