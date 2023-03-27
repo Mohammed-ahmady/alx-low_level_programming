@@ -1,5 +1,3 @@
-#include "main.h"
-
 /**
  * rev_string - reverses a string
  *
@@ -10,18 +8,19 @@
 
 void rev_string(char *s)
 {
-	int i, l;
-	char temp;
+	int l, i;
+	char ch;
 
-	while (*(s + l) != '\0')
+	/*find string length without null char*/
+	for (l = 0; s[l] != '\0'; ++l)
+		;
+
+	/*swap the string by looping to half the string*/
+	for (i = 0; i < l / 2; ++i)
 	{
-		l++;
+		ch = s[i];
+		s[i] = s[l - 1 - i]; /*-1 because the array starts from 0*/
+		s[l - 1 - i] = ch;
 	}
 
-	for (i = 0; i< l / 2; ++i)
-	{
-		temp = s[i];
-		s[i] = s[l - 1 - i];
-		s[l - 1 - i] = temp;
-	}
 }
