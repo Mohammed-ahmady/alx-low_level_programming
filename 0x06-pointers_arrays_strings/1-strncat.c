@@ -10,16 +10,15 @@
  * Return: @dest
 */
 
-char *_strncat(char *dest, const char *src, size_t n)
+char *_strncat(char *dest, char *src, int n)
 {
 	char *p = dest;
+	int i = 0;
 
 	while (*p != '\0')
 	{
 		p++;
 	}
-	size_t i = 0;
-
 	while (i < n && *src != '\0')
 	{
 		*p++ = *src++;
