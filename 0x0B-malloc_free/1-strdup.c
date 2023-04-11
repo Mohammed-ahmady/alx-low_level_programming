@@ -18,14 +18,14 @@ char *_strdup(char *str)
 	int i;
 	char *str2;
 	int len = 0;
-
-	while (str[len] != '\0')
-	{
-		len++;
-	}
+	
 	if (str == NULL)
 	{
 		return (NULL);
+	}
+	while (str[len] != '\0')
+	{
+		len++;
 	}
 	str2 = (char *)malloc(strlen(str) + 1);
 	if (str2 == NULL)
